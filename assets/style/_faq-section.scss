@@ -5,6 +5,9 @@
         grid-template-columns: .475fr 1fr;
         gap: 20px;
 
+        @media screen and (max-width:1023px) {
+            grid-template-columns: 1fr;
+        }
         &-content{
             display: flex;
             flex-direction: column;
@@ -21,7 +24,7 @@
         &-accord {
             display: flex;
             flex-direction: column;
-            margin-bottom: 40px;
+            
             gap: 10px;
             .services-page & {
               margin-bottom: 0;
@@ -32,8 +35,8 @@
                 background: #FAFAFA;
                 max-width: 100%;
                 width: 100%;
-                
                 padding: 40px;
+                cursor: pointer;
     
                 @media screen and (max-width:767px) {
                   padding: 20px;
@@ -49,6 +52,8 @@
                     display: flex;
                     align-items: center;
                     gap: 40px;
+                    justify-content: space-between;
+                    transition: all .3s ease;
                     @media screen and (max-width:767px) {
                       gap: 20px;
                     }
@@ -71,8 +76,9 @@
                   }
                 &-content {
                     display: none;
-                    padding: 40px 40px 0px 40px;
+                    padding: 20px 20px 0px 0px;
                     
+                    transition: all .3s ease;
                     @media screen and (max-width:767px) {
                       padding: 20px 0;
                     }
@@ -82,27 +88,32 @@
                   }
                  
               }
-              .faq__container-accord-item:hover,
-              .faq__container-accord-item.active {
-                
-                transition: .3s ease;
-              }
               .faq__container-accord-item.active .faq__container-accord-item-content {
                 display: block;
+                color: $--white;
               }
-              .faq__container-accord-item:hover .faq__container-accord-item-top div,
-              .faq__container-accord-item.active  .faq__container-accord-item-top div {
+              .faq__container-accord-item:hover,
+              .faq__container-accord-item.active {
                 background-color: $--redBtn;
                 transition: .3s ease;
                 border-color: transparent;
               }
              
-              .faq__container-accord-item:hover .faq__container-accord-item-top svg path,
-                .faq__container-accord-item.active  .faq__container-accord-item-top svg path  {
-                stroke: $--white;
+              .faq__container-accord-item:hover .faq__container-accord-item-top,
+                .faq__container-accord-item.active .faq__container-accord-item-top {
+                 
+               color: $--white;
+              }
+              .faq__container-accord-item:hover .faq__container-accord-item-top svg rect,
+                .faq__container-accord-item.active .faq__container-accord-item-top svg rect  {
+                stroke: $--redBtn;   
                 transition: .3s ease;
               }
-    
+              .faq__container-accord-item:hover .faq__container-accord-item-top svg line,
+                .faq__container-accord-item.active .faq__container-accord-item-top svg line  {
+                stroke: $--redBtn;
+                transition: .3s ease;
+              }
     
           }
     }

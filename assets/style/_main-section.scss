@@ -1,0 +1,75 @@
+.main{
+    background: $--blackBg;
+    padding: 84px 0 157px;
+    border-radius: 0 0 50px 50px;
+    color: $--white;
+    position: relative;
+    &__container{
+        max-width: 1619px;
+        padding: 0 10px;
+       margin: 0 auto;
+       position: relative;
+       
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            max-width: 715px;
+            width: 100%;
+            @media screen and (max-width:1380px) {
+                max-width: 625px;
+                
+            }
+            @media screen and (max-width:1023px) {
+                max-width: 100%;
+                
+            }
+            
+            & h1{
+                @media screen and (max-width:1380px) {
+                   font-size: 54px;
+                }
+                @media screen and (max-width:1080px) {
+                   font-size: 50px;
+                }
+            }
+            & svg{
+                max-width: 237px;
+                max-height: 53px;
+            }
+            p{
+                max-width: 667px;
+                margin-bottom: 20px;
+                @media screen and (max-width:1080px) {
+                    max-width: 525px;
+                 }
+                @media screen and (max-width:1023px) {
+                    max-width: 100%;
+                    width: 100%;
+                 }
+            }
+
+        }
+        &-image{
+            position: absolute;
+            right: 0;
+            top: -35px;
+            width: 60%;
+            @media screen and (max-width:1380px) {
+                top: -5px;
+                width: 60%;  
+                height: 520px;
+            }
+            @media screen and (max-width:1023px) {
+                display: none;
+            }
+            @media screen and (min-width:1527px) { 
+                top: 30px;
+            }
+           
+            
+        }
+    }
+    
+}

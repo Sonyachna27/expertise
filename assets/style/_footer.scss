@@ -46,10 +46,23 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        & img {
-            width: 52px;
-            height: 52px;
+        & a{
+            transition: all .5s ease;
+            &:hover{
+                & svg rect{
+                    fill: $--redBtn;
+                }
+               & svg path{
+                    fill: $--white;
+                }
+            }
+            & svg {
+                width: 52px;
+                height: 52px;
+                transition: all .5s ease;
+            }
         }
+        
     }
     &__copyright {
         font-size: 14px;

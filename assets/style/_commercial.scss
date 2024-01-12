@@ -26,10 +26,17 @@
                     gap: 40px;
                 padding: 60px 40px;
                 }
+                @media screen and (max-width:767px) {
+                   grid-template-columns: 1fr;
+                }
                 
                 & img{
                     height: 100%;
                     min-height: 228px;
+                    @media screen and (max-width:767px) {
+                      max-width: 100%;
+                      width: 100%;
+                     }
                 }
             &-content{
                 display: flex;

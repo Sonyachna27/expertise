@@ -46,6 +46,7 @@
                 align-items: center;
                 @media screen and (max-width: 1023px) {
                     grid-template-columns: 1fr;
+                    padding: 20px;
                 }
                 @media screen and (max-width: 767px) {
                     padding: 30px;
@@ -56,14 +57,17 @@
                 &-count{
                     display: flex;
                     align-items: center;
-                    gap: 60px;
+                    gap: 10px;
                     max-width: 100%;
                     width: 100%;
+                    @media screen and (min-width: 1440px) {
+                        gap: 60px;
+                    }
                     @media screen and (min-width:1240px) {
                      gap: 20px;
                      }
                     & span{
-                        font-size: 48px;
+                        font-size: 32px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
@@ -73,20 +77,30 @@
                         align-items: center;
                         justify-content: center;
                         text-align: center;
-                        padding: 42px;
-                        max-width: 145px;
-                        max-height: 148px;
                         width: 100%;
                         height: 100%;
-                        padding: 60px;
+                        padding: 39px;
+                        max-width: 120px;
+                        max-height: 142px;
+                        @media screen and (min-width: 1440px) {
+                            padding: 60px;
+                            font-size: 48px;
+                            max-width: 145px;
+                            max-height: 148px;
+                        }
                         @media screen and (max-width:1023px) {
                            font-size: 32px;
                            max-width: 109px;
                             max-height: 111px;
                         }
+                        @media screen and (max-width:367px) {
+                            font-size: 18px;
+                            max-width: 84px;
+                            max-height: 76px;
+                        }
                         
                     }
-                    & p {
+                    & h3 {
                     font-size: 32px;
                     font-style: normal;
                     font-weight: 500;

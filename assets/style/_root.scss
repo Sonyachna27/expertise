@@ -4,43 +4,9 @@ $--redBtn: #E73A2E;
 $--black: #000;
 $--blackBg: #121212;
 
-@mixin title-wrap{
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    display: grid;
-    grid-template-columns: .1fr 1fr 1fr;
-    margin-bottom: 40px;
-    gap: 20px;
-    align-items: center;
-    h2{
-        max-width: 100%;
-        width: 100%;
-    }
-   
-    @media screen and (max-width:1023px) {
-        
-        grid-template-columns: .1fr 1fr;
-    }
-    p{
-        max-width: 357px;
-        font-size: 12px;
-        margin-left: auto;
 
-        @media screen and (max-width:1023px) {
-            max-width: 100%;
-            grid-column:  1 / 3;
-        }
-    }
-}
 
-@mixin btnHover{
-    &:hover{
-        color: $--redBtn;
-        border-color: $--redBtn;
-    }
-        
-}
+
 @mixin accordTitle{
                     margin-right: auto;
                     font-style: normal;
@@ -66,6 +32,9 @@ body{
     line-height: normal;
 }
 
+main{
+    margin-top: 80px;
+}
 
   .container{
       max-width: 1780px;

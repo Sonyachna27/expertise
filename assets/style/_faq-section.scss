@@ -17,6 +17,10 @@
             border: 1px solid #FAFAFA;
             padding: 40px;
             background: #121212;
+
+            @media screen and (max-width:767px) {
+              padding: 20px;
+            }
             & h2{
                 color: $--white;
             }
@@ -35,7 +39,7 @@
                 background: #FAFAFA;
                 max-width: 100%;
                 width: 100%;
-                padding: 40px;
+                padding: 38px;
                 cursor: pointer;
     
                 @media screen and (max-width:767px) {
@@ -54,6 +58,11 @@
                     gap: 40px;
                     justify-content: space-between;
                     transition: all .3s ease;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    
                     @media screen and (max-width:767px) {
                       gap: 20px;
                     }
@@ -73,11 +82,17 @@
                           overflow-wrap: anywhere;
                         }
                     }
+                    & svg {
+                      transition: all .3s ease;
+                    }
                   }
                 &-content {
-                    display: none;
                     padding: 20px 20px 0px 0px;
-                    
+                    max-height: 0;
+                    padding-top: 0;
+                    overflow: hidden;
+                    opacity: 0;
+                    visibility: hidden;
                     transition: all .3s ease;
                     @media screen and (max-width:767px) {
                       padding: 20px 0;
@@ -89,14 +104,18 @@
                  
               }
               .faq__container-accord-item.active .faq__container-accord-item-content {
-                display: block;
                 color: $--white;
+                max-height: fit-content;
+                opacity: 1;
+                visibility: visible;
+                padding-top: 20px;
               }
               .faq__container-accord-item:hover,
               .faq__container-accord-item.active {
                 background-color: $--redBtn;
                 transition: .3s ease;
                 border-color: transparent;
+                
               }
              
               .faq__container-accord-item:hover .faq__container-accord-item-top,
@@ -107,12 +126,14 @@
               .faq__container-accord-item:hover .faq__container-accord-item-top svg rect,
                 .faq__container-accord-item.active .faq__container-accord-item-top svg rect  {
                 stroke: $--redBtn;   
-                transition: .3s ease;
+              }
+             
+                .faq__container-accord-item.active .faq__container-accord-item-top svg   {
+                  transform: rotate(45deg);   
               }
               .faq__container-accord-item:hover .faq__container-accord-item-top svg line,
                 .faq__container-accord-item.active .faq__container-accord-item-top svg line  {
                 stroke: $--redBtn;
-                transition: .3s ease;
               }
     
           }

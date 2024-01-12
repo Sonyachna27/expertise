@@ -29,6 +29,9 @@
                 @media screen and (max-width:767px) {
                     font-size: 28px;
                 }
+                @media screen and (max-width:367px) {
+                    font-size: 22px;
+                }
                 @media screen and (min-width:1428px) {
                     font-size: 50px;
                 }
@@ -36,6 +39,9 @@
 
             & p:nth-last-of-type(1){
                 margin-bottom: 20px;
+            }
+            & svg {
+                max-width: 100%;
             }
 
         }

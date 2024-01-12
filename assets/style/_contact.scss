@@ -44,6 +44,8 @@ margin-bottom: 120px;
                     font-weight: 500;
                     line-height: normal;
                     width: fit-content;
+                    width: -moz-fit-content;
+                    max-width: fit-content;
                     & svg{
                         min-width: fit-content;
                     }

@@ -333,6 +333,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 1023px) {
   .header__container-nav {
@@ -1011,16 +1012,6 @@ a {
   visibility: hidden;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 767px) {
-  .faq__container-accord-item-content {
-    padding: 20px 0;
-  }
-}
-@media screen and (max-width: 367px) {
-  .faq__container-accord-item-content {
-    padding: 10px 0;
-  }
-}
 .faq__container-accord .faq__container-accord-item.active .faq__container-accord-item-content {
   color: #fff;
   max-height: -moz-fit-content;
@@ -1028,6 +1019,16 @@ a {
   opacity: 1;
   visibility: visible;
   padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .faq__container-accord .faq__container-accord-item.active .faq__container-accord-item-content {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 367px) {
+  .faq__container-accord .faq__container-accord-item.active .faq__container-accord-item-content {
+    padding: 10px 0;
+  }
 }
 .faq__container-accord .faq__container-accord-item:hover,
 .faq__container-accord .faq__container-accord-item.active {

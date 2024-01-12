@@ -378,6 +378,9 @@ a {
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
+.header__container-nav nav ul a:hover {
+  color: #E73A2E;
+}
 @media screen and (max-width: 1023px) {
   .header__container-nav nav ul a {
     font-size: 20px;
@@ -1101,8 +1104,10 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width: -moz-fit-content;
   width: fit-content;
+  width: -moz-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .contact__container-content-info a svg, .contact__container-content-info span svg {
   min-width: -moz-fit-content;
@@ -1306,6 +1311,9 @@ a {
 .footer__container ul a {
   color: #fff;
   font-size: 18px;
+}
+.footer__container ul a:hover {
+  color: #E73A2E;
 }
 .footer__links {
   display: flex;

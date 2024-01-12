@@ -32,6 +32,9 @@
             & a {
                 color: #fff;
                 font-size: 18px;
+                &:hover{
+                    color: $--redBtn;
+                }
             }
         }   
     }

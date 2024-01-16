@@ -40,6 +40,10 @@
                       max-width: 100%;
                       width: 100%;
                      }
+                    @media screen and (max-width:550px) {
+                      max-height: 200px;
+                      min-height: auto;
+                     }
                 }
             &-content{
                 display: flex;
@@ -84,7 +88,11 @@
                     margin: 0;
                     padding: 0;
                     list-style-position: inside;
+                   
                     & li{
+                        &::marker{
+                            margin-right: 10px;
+                        }
                         & span{
                             font-weight: 700;
                         }

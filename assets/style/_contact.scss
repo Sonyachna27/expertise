@@ -99,8 +99,10 @@ margin-bottom: 120px;
                     width: 22%;
                     transition: all .5s ease;
                     @media screen and (max-width:767px) {
-                        width: 45%;
-                        // max-height: 145px;
+                        width: 47%;
+                    }
+                    @media screen and (max-width:367px) {
+                       width: 45%;
                     }
                     & svg{
                         max-width: 100%;
